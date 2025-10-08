@@ -11,12 +11,13 @@ Building on these precedents, I want to re-express “Wheels of Fortune” in 3D
 
 
 ## PART2:
-This random line expression technique is generally called "Random Walk" in coding. The "Random Walk" mechanism allows lines to randomly extend from one point to the next, thus generating intricate, tortuous paths. As Dhruv Karan shows in p5.js generation art, random walks combined with Perlin noise can achieve a balance between "random" and "order", making the lines both free and beautiful. The “Random Walkers” tutorial of Generative Hut also points out that by controlling parameters such as step size, direction probability, and boundary rebound, the degree of chaos can be controlled, so that the work is dynamic and not completely messy.
 
-![An image of vg](readmeImages/vg.png)
-![An image of p22](readmeImages/p22.png)
-![An image of p23](readmeImages/p23.png)
+I’ll use a simple circle-packing routine in p5.js: seed circles, grow them each frame, and stop growth when an overlap is detected. This yields a non-overlapping, organic layout I can map to 3D by extruding each circle as a shallow cylinder (WEBGL). Radius-to-height/brightness and a slow rotation reinforce the “wheel” rhythm. Orbit control plus basic Lambert/emissive materials add clear light–shadow. The algorithm is short and parameter-driven (min gap, max radius), so I can tune density and structure to match my painting while staying within course scope.
 
-Example implementation:
-[Link Text](https://dhruvkaran.com/posts/recreating-paintings-with-p5js)
-[Link Text](https://www.generativehut.com/post/random-walkers)
+
+![An image of Joe](readmeImages/Interwind.png)
+[Link Text](https://openprocessing.org/sketch/2187000)
+
+
+[Link Text](https://thecodingtrain.com/challenges/50-animated-circle-packing)
+[Link Text](https://thecodingtrain.com/tracks/webgl/webgl/2-3d-geometries)
