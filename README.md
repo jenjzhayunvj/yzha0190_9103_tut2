@@ -11,8 +11,7 @@ Building on these precedents, I want to re-express “Wheels of Fortune” in 3D
 
 
 ## PART2:
-
-I’ll use a simple circle-packing routine in p5.js: seed circles, grow them each frame, and stop growth when an overlap is detected. This yields a non-overlapping, organic layout I can map to 3D by extruding each circle as a shallow cylinder (WEBGL). Radius-to-height/brightness and a slow rotation reinforce the “wheel” rhythm. Orbit control plus basic Lambert/emissive materials add clear light–shadow. The algorithm is short and parameter-driven (min gap, max radius), so I can tune density and structure to match my painting while staying within course scope.
+I’ll use a simple circle-packing routine in p5.js:, to seed circles, grow them each frame, and stop growth when an overlap is detected. This yields a non-overlapping, organic layout I can map to 3D by extruding each circle as a shallow cylinder (WEBGL). Radius to height and brightness and a slow rotation reinforce the “wheel” rhythm. Orbit control plus basic Lambert/emissive materials add clear light–shadow. The algorithm is short and parameter-driven (min gap, max radius), so I can tune density and structure to match my idea.
 
 
 ![An image of Joe](readmeImages/Interwind.png)
